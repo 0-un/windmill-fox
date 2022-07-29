@@ -1,0 +1,139 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	
+}
+/* 폰트 */
+/* 저스트버블 */
+@font-face{
+	font-family: 'JustBubble';
+	src: url("../font/JustBubble.ttf") format("truetype"); 
+}
+/* 교보문고손글씨2019 */
+@font-face{
+	font-family: 'KyoboHandwriting2019';
+	src: url("../font/KyoboHandwriting2019.ttf") format("truetype"); 
+}
+/* 경기천년바탕 */
+@font-face{
+	font-family: 'Gyeonggi_Bold';
+	src: url("../font/Gyeonggi_Bold.ttf") format("truetype"); 
+}
+/* 경기천년바탕 */
+@font-face{
+	font-family: 'Gyeonggi_Medium';
+	src: url("../font/Gyeonggi_Medium.ttf") format("truetype"); 
+}
+
+
+
+/* 랭킹화면에서 css 적용부분들  ~~시작 ~~*/
+
+#S_RANKING_div .list {
+    /* background-image: url(../image/ranking/list_bg.png); */
+    background-color: #fff;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    width: 410px;
+    height: 98px;
+    display: flex;
+    align-items: center;
+}
+
+#S_RANKING_div .rank_img {
+    width: 60px;
+    height: 60px;
+    margin-left: 24px;
+    margin-bottom: 6px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../image/ranking/rank_nomal.png)
+}
+
+
+/*1등사진*/
+#S_RANKING_div .firstRank {
+    background-image: url(../image/ranking/rank_1.png);
+}
+
+/*2등사진*/
+#S_RANKING_div .secondRank {
+    background-image: url(../image/ranking/rank_2.png);
+}
+
+/*3등사진*/
+#S_RANKING_div .thirdRank {
+    background-image: url(../image/ranking/rnak_3.png);
+}
+
+
+
+#S_RANKING_div .scoreBox {
+    margin-left: 56px;
+    width: 245px;
+    height: 98px;
+}
+
+#S_RANKING_div .idBox {
+    width: 132px;
+    height: 21px;
+    border-radius: 11px;
+    font-family: 'Gyeonggi_Medium';
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    float: right;
+    background-color: black;
+    color: white;
+}
+
+
+/*1등 닉네임바 색상*/
+#S_RANKING_div .firstID {
+    background-color: #FFE600;
+    color: black;
+}
+
+/*2등 닉네임바 색상*/
+#S_RANKING_div .secondID {
+    background-color: #D4D4D4;
+    box-shadow: inset 0px 3px 6px 0px rgba(0,0,0,0.16);
+    color: white;
+    text-shadow: 0px 3px 4px rgba(0,0,0,0.16);
+}
+
+/*3등 닉네임바 색상*/
+#S_RANKING_div .thirdID {
+    background-color: #8A663E;
+    color: white;
+}
+
+
+#S_RANKING_div .score {
+    float: right;
+    width: 248px;
+    height: 45px;
+    font-size: 40px;
+    font-family: 'JustBubble';
+    color: black;
+    display: inline-block;
+    text-align: right;
+}
+
+/* 랭킹화면에서 css 적용부분들  ~~시작 ~~*/
+
+#S_RANKING_div #ranking_list::-webkit-scrollbar {
+    width: 10px;
+}
+#S_RANKING_div #ranking_list::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 10px;
+}
+#S_RANKING_div #ranking_list::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 10px;
+}
